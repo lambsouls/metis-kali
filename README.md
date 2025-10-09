@@ -3,6 +3,7 @@
 
 #1.直接拉取使用镜像
 ```bash
+docker pull ghcr.io/lambsouls/metis-kali:latest
 ```
 
 #2.直接构建镜像
