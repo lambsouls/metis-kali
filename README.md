@@ -4,7 +4,7 @@
 #1.直接拉取使用镜像
 ```bash
 docker pull ghcr.io/lambsouls/metis-kali:latest
-docker run -d -p 外部端口:22 --name metis-kali ghcr.io/lambsouls/metis-kali:latest bash -c 'echo "root:NewPassword!" | chpasswd && /usr/sbin/sshd -D'
+docker run -d -p 外部端口:22 --name metis-kali --privileged ghcr.io/lambsouls/metis-kali:latest bash -c 'echo "root:NewPassword!" | chpasswd && /usr/sbin/sshd -D'
 ```
 
 #2.直接构建镜像
